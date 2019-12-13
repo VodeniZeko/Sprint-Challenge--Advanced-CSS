@@ -1,17 +1,33 @@
 // Mixins Here
 
+// parametric mixin for styling button
+
 .custom-btn (@font-S, @padding, @border-R) {
 font-size:@font-S;
 padding:@padding;
 border-radius: @border-R;
 }
 
+// parametric mixin for switching colors
+
 .custom-btn-color(@bg, @col) {
 	background-color: @bg;
 	color: @col;
 }
 
+// parametric mixin for layout on mobile view
+
 .mobile (@d,@fd) {
 	display: @d;
 	flex-direction: @fd;
+}
+
+
+// aligning images and text on mobile view
+
+.mobile-align {
+    width: 92%;
+    margin: 20px 3.5%;
+    border-radius: 20px;
+    height: 100%;
 }
