@@ -190,8 +190,8 @@ nav span {
   color: #454A59;
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
+  color: #81848E;
+  background: #F6F6F6;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
@@ -240,6 +240,18 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 2% 4%;
+  border-radius: 5px;
+  background-color: #22283A;
+  color: #fff;
+}
+.home .walk .walk-text .btn button:hover {
+  background-color: #fff;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;

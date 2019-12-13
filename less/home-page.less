@@ -3,7 +3,7 @@
 .home {
 
   .intro {
-    
+
     h2 {
       padding: 15px;
     }
@@ -58,6 +58,14 @@
       }
 
       .btn {
+        button {
+          cursor: pointer;
+          .custom-btn(1.5rem,2% 4% , 5px);
+          .custom-btn-color(@btn-bg-color, #fff);
+        &:hover {
+         .custom-btn-color( #fff, @btn-bg-color);
+        }
+        }
       }
     }
 
