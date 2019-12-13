@@ -141,7 +141,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -149,7 +149,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -167,8 +167,8 @@ p {
   margin: 0 auto;
 }
 nav {
-  border-bottom: 2px solid #F1F1F1;
-  background-color: #F6F6F6;
+  border-bottom: 2px solid #f1f1f1;
+  background-color: #f6f6f6;
 }
 nav .navigation {
   display: flex;
@@ -194,8 +194,8 @@ nav h1 {
   font-size: 5rem;
 }
 footer {
-  color: #81848E;
-  background: #F6F6F6;
+  color: #81848e;
+  background: #f6f6f6;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
@@ -285,8 +285,8 @@ footer {
   font-size: 1.5rem;
   padding: 2% 4%;
   border-radius: 5px;
-  background-color: #22283A;
-  color: #fff;
+  background-color: #22283a;
+  color: #ffffff;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn button {
@@ -300,8 +300,8 @@ footer {
   }
 }
 .home .walk .walk-text .btn button:hover {
-  background-color: #fff;
-  color: #22283A;
+  background-color: #ffffff;
+  color: #22283a;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -332,7 +332,7 @@ footer {
   margin: 10% auto;
 }
 .cloud-body .form h1 {
-  background: #22283A;
+  background: #22283a;
   padding: 20px 0;
   font-size: 140%;
   font-weight: 300;
@@ -387,7 +387,7 @@ footer {
   -moz-box-sizing: border-box;
   width: 100%;
   padding: 3%;
-  background: #22283A;
+  background: #22283a;
   border-bottom: 2px solid #30C29E;
   border-top-style: none;
   border-right-style: none;
@@ -396,6 +396,53 @@ footer {
 }
 .cloud-body .form input[type="submit"]:hover,
 .cloud-body .form input[type="button"]:hover {
-  background-color: #fff;
-  color: #22283A;
+  background-color: #ffffff;
+  color: #22283a;
+}
+.about-us {
+  background-image: url(http://opengameart.org/sites/default/files/seamless%20space_0.PNG);
+  background-color: black;
+  animation: space-animation 60s linear infinite;
+  width: 100%;
+  height: auto;
+}
+.about-us .text {
+  padding-top: 5%;
+}
+.about-us h3 {
+  text-align: center;
+  color: red;
+  line-height: 5rem;
+}
+.about-us p {
+  text-align: center;
+  color: #fff;
+  line-height: 3rem;
+  text-shadow: 0.5px 0.5px red;
+}
+.about-us .globe {
+  width: 92px;
+  background-color: red;
+  height: 92px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -41px;
+  margin-top: -41px;
+  background: url('https://svs.gsfc.nasa.gov/vis/a000000/a002900/a002915/bluemarble-2048.png') repeat;
+  background-size: 184px 92px;
+  box-shadow: inset 20px 2px 50px #000000, 0 0 100px rgba(79, 193, 233, 0.4);
+  border-radius: 100%;
+  animation: animate 6s linear infinite;
+  transform: rotate(-15deg);
+}
+@keyframes animate {
+  from {
+    background-position: 184px 0;
+  }
+}
+@keyframes space-animation {
+  from {
+    background-position-y: -100%;
+  }
 }
